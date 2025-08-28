@@ -136,30 +136,61 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="questions" class="level2">
 <h2 class="anchored" data-anchor-id="questions">Questions</h2>
 <ol type="1">
-<li>What do you think being a data scientist is about?</li>
-<li>What differences / similarities do you see between data scientists and statisticians?</li>
-<li>How do you view yourself in relation to these two areas?</li>
-</ol>
+<li><p>What do you think being a data scientist is about?</p>
+<p>A data scientist is someone who can solve business problems using data. The key ideas are as follows:</p>
 <ul>
-<li>Point 1</li>
-<li>Point 2</li>
-<li>Point 3</li>
-</ul>
+<li><p>They work with other employees at the company, including leadership, to determine what problems the company is dealing with and if they are solvable using data.</p></li>
+<li><p>The data is collected from various sources and explored to find any trends or concerns.</p></li>
+<li><p>Data is then cleaned and preprocessed to be used in modeling.</p></li>
+<li><p>The data scientist trains models using the data, compares them, and chooses the best one based on a variety of factors like performance, efficiency, interpretability, and more.</p></li>
+<li><p>Finally the model is put into production and is continued to be monitored to make sure it is performing as expected.</p></li>
+</ul></li>
+<li><p>What differences / similarities do you see between data scientists and statisticians?</p>
+<p>Both data scientists and statisticians solve problems by collecting data, analyzing it, and drawing conclusions. They both need some knowledge of statistics, mathematics, programming languages, data visualizations, and machine learning. As far as I understand a statistician focuses on traditional statistical techniques like regression, hypothesis testing, and ANOVA. Their goal is to run experiments and generate insight for the organization to take action. A data scientist is more focused on creating models that solve some business need. They set up automated code for production that takes in data, processes it, and runs it through a model to generate some useful output.</p></li>
+<li><p>How do you view yourself in relation to these two areas?</p>
+<p>Being in a statistics masters we’ve obviously been exposed to the traditional statistics techniques. That being said I’ve also taken some classes and spent my own time to learn information and skillsets that pertain to the data science side of the spectrum. From what minimal experience I have, like at my internship, I enjoyed the way the data science / analytics tends to go. There seems to often be a clear sense of the business problem that needs to be solved, yet it’s completely open ended how you can go about solving it. Because of this the process has a lot of flexibility that, despite occasionally making it difficult to figure out where to go next, leads to some fairly enjoyable problem solving. Therefore, I’d say my interests are leaning more toward Data Science. That being said I also haven’t had true work experience as a statistician, so maybe it would also be enjoyable.</p></li>
+</ol>
 </section>
 <section id="code" class="level2">
 <h2 class="anchored" data-anchor-id="code">Code</h2>
+<p>Select the petal width variable from the iris dataset and get it’s density estimate.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">density</span>(iris<span class="sc">$</span>Petal.Width)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>∗ Include some markdown text between these code chunks explaining what you are doing with the R code.</p>
+<p>Identify the class of the y object, it’s data type, and the structure of the object.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ∗ Create an R code chunk to determine the class, type, and structure of the object y</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "density"</code></pre>
 </div>
-<p>∗ Include some markdown text between these code chunks explaining what you are doing with the R code.</p>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "list"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>List of 8
+ $ x         : num [1:512] -0.656 -0.648 -0.64 -0.633 -0.625 ...
+ $ y         : num [1:512] 0.00161 0.00178 0.00197 0.00217 0.00239 ...
+ $ bw        : num 0.252
+ $ n         : int 150
+ $ old.coords: logi FALSE
+ $ call      : language density.default(x = iris$Petal.Width)
+ $ data.name : chr "iris$Petal.Width"
+ $ has.na    : logi FALSE
+ - attr(*, "class")= chr "density"</code></pre>
+</div>
+</div>
+<p>Plot the density estimate of Iris Petal Width.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ∗ Create an R code chunk that uses the plot function on y. Hide the R code in the final document by setting echo to false.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Homework1_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
 </div>
-<p>– You can render the document to check things are looking good.</p>
+</div>
+</div>
 
 
 </section>
