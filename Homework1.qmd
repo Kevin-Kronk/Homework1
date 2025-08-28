@@ -1,0 +1,35 @@
+---
+title: "Data Science Homework 1"
+format: html
+editor: visual
+---
+
+## Questions
+
+1.  What do you think being a data scientist is about?
+2.  What differences / similarities do you see between data scientists and statisticians?
+3.  How do you view yourself in relation to these two areas?
+
+-   Point 1
+-   Point 2
+-   Point 3
+
+## Code
+
+```{r}
+y <- density(iris$Petal.Width)
+```
+
+∗ Include some markdown text between these code chunks explaining what you are doing with the R code.
+
+```{r}
+# ∗ Create an R code chunk to determine the class, type, and structure of the object y
+```
+
+∗ Include some markdown text between these code chunks explaining what you are doing with the R code.
+
+```{r}
+# ∗ Create an R code chunk that uses the plot function on y. Hide the R code in the final document by setting echo to false.
+```
+
+– You can render the document to check things are looking good.

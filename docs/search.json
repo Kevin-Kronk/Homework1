@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "Homework1.html",
+    "href": "Homework1.html",
+    "title": "Data Science Homework 1",
+    "section": "",
+    "text": "What do you think being a data scientist is about?\nWhat differences / similarities do you see between data scientists and statisticians?\nHow do you view yourself in relation to these two areas?\n\n\nPoint 1\nPoint 2\nPoint 3"
+  },
+  {
+    "objectID": "Homework1.html#questions",
+    "href": "Homework1.html#questions",
+    "title": "Data Science Homework 1",
+    "section": "",
+    "text": "What do you think being a data scientist is about?\nWhat differences / similarities do you see between data scientists and statisticians?\nHow do you view yourself in relation to these two areas?\n\n\nPoint 1\nPoint 2\nPoint 3"
+  },
+  {
+    "objectID": "Homework1.html#code",
+    "href": "Homework1.html#code",
+    "title": "Data Science Homework 1",
+    "section": "Code",
+    "text": "Code\n\ny &lt;- density(iris$Petal.Width)\n\n∗ Include some markdown text between these code chunks explaining what you are doing with the R code.\n\n# ∗ Create an R code chunk to determine the class, type, and structure of the object y\n\n∗ Include some markdown text between these code chunks explaining what you are doing with the R code.\n\n# ∗ Create an R code chunk that uses the plot function on y. Hide the R code in the final document by setting echo to false.\n\n– You can render the document to check things are looking good."
+  }
+]
